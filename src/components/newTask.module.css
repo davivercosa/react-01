@@ -1,9 +1,14 @@
 .newTask {
-    display: grid;
     gap: .5rem; 
-    grid-template-columns: 1fr 5.625rem;
-    height: 3.375rem;
+    /* display: grid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* grid-template-columns: 1fr 5.625rem; */
+    /* height: 3.375rem; */
 }
+
 
 .newTask input {
     background-color: var(--gray-400);
@@ -11,6 +16,7 @@
     border-radius: 8px;
     color: white;
     padding: 1rem;
+    width: 80%;
 }
 
 .newTask button {

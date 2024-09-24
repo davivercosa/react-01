@@ -9,6 +9,32 @@
     margin-top: 3.375rem;
 }
 
+.taskEmpty {
+    border-top: 1.5px solid var(--gray-400);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.hold {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: .5rem;
+}
+
+.hold1 {
+    font-weight: bold;
+    color: var(--gray-300);
+}
+
+.hold2 {
+    color: var(--gray-300);
+}
+
 .taskInfoHeader {
     align-items: center;
     display: flex;
@@ -36,4 +62,11 @@
 
 .taskDone {
     color: var(--purple-light);
+}
+
+.taskInfoContent {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }

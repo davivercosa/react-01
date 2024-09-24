@@ -4,7 +4,9 @@
     font-size: 0.875rem;
     justify-content: space-between;
     padding: 1rem;
+    border-radius: 8px;
     gap: 0.75rem;
+    background-color: var(--gray-400);
 }
 
 .taskLeft {
@@ -13,10 +15,56 @@
     gap: 0.75rem;
 }
 
-.taskChecker {
+.taskCheckerDone {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: 1px solid var(--purple-dark);
+    background-color: var(--purple-dark);
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: background-color 0.1s, border 0.1s;
+}
+
+.taskCheckerDone:hover {
+    border: 1px solid var(--purple-light);
+    background-color: var(--purple-light);
+}
+
+.taskCheckerNotDone {
     width: 1rem;
     height: 1rem;
     border-radius: 100%;
     border: 1px solid var(--blue-light);
     flex-shrink: 0;
+    cursor: pointer;
+    transition: border 0.1s;
+}
+
+.taskCheckerNotDone:hover {
+    border: 1px solid var(--blue-dark);
+}
+
+.taskDone {
+    text-decoration: line-through; 
+    color: var(--gray-300);
+}
+
+.taskTrash {
+    transition: background-color 0.1s, color 0.1s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+.taskTrash:hover {
+    color: var(--danger);
+    background-color: var(--gray-300)
 }
