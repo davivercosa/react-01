@@ -1,0 +1,39 @@
+.content {
+    margin: calc(0px - 3.375rem / 2) auto 0;
+    max-width: 46rem;
+}
+
+/*  */
+
+.taskInfo {
+    margin-top: 3.375rem;
+}
+
+.taskInfoHeader {
+    align-items: center;
+    display: flex;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: 1.188rem;
+    justify-content: space-between;
+}
+
+.taskInfoCreated, .taskInfoDone {
+    align-items: center;
+    display: flex;
+    gap: 0.625rem;
+}
+
+.taskCount {
+    background-color: var(--gray-400);
+    padding: 2px 8px;
+    border-radius: 8px;
+}
+
+.taskCreated {
+    color: var(--blue-light);
+}
+
+.taskDone {
+    color: var(--purple-light);
+}
